@@ -1,9 +1,9 @@
 import { Route, Routes } from "react-router-dom";
-import { Home } from "./pages/Home";
-import { Productos } from "./pages/Productos";
-import { Promociones } from "./pages/Promociones";
-import { Categorias } from "./pages/Categorias";
-import { Producto } from "./pages/Producto";
+import { Home } from "./pages/Home/Home";
+import { Productos } from "./pages/Productos/Productos";
+import { Promociones } from "./pages/Promociones/Promociones";
+import { Categorias } from "./pages/Categorias/Categorias";
+import { Producto } from "./pages/Producto/Producto";
 
 export const Router = () => {
   return (
