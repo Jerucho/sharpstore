@@ -1,15 +1,26 @@
+import { Link } from "react-router-dom";
+import "./navbar.css";
 export const Navbar = () => {
   return (
     <nav>
+      <div>
+        <img src="" alt="logo tiendaasf" />
+      </div>
       <ul>
         <li>
-          <a href="/">Home</a>
+          <Link to="/">Inicio </Link>
         </li>
         <li>
-          <a href="/about">About</a>
+          <Link to="/productos">Productos </Link>
         </li>
         <li>
-          <a href="/contact">Contact</a>
+          <Link to="promociones">Promociones </Link>
+        </li>
+        <li>
+          <Link to="categorias">Categorias </Link>
+        </li>
+        <li>
+          <Link to="carrito">Carrito </Link>
         </li>
       </ul>
     </nav>

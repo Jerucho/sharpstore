@@ -1,3 +1,10 @@
+import { Navbar } from "../../componentes/Navbar/Navbar";
+import { Banner } from "../../componentes/Banner/Banner";
 export const Home = () => {
-  return <h1>Home</h1>;
+  return (
+    <>
+      <Navbar />
+      <Banner />
+    </>
+  )
 };

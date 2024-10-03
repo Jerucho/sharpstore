@@ -1,10 +1,10 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from "react";
 
 export const Banner = () => {
   const images = [
-    'img1',
-    'img2',
-    'img3'
+    "https://img.freepik.com/vector-gratis/banner-rebajas-verano-plano-foto_23-2148968282.jpg",
+    "img2",
+    "img3",
   ];
 
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
@@ -14,7 +14,7 @@ export const Banner = () => {
       setCurrentImageIndex((prevIndex) => (prevIndex + 1) % images.length);
     }, 5000);
 
-    return () => clearInterval(intervalId); 
+    return () => clearInterval(intervalId);
   }, [images.length]);
 
   return (
@@ -22,7 +22,7 @@ export const Banner = () => {
       <img
         src={images[currentImageIndex]}
         alt="Banner"
-        style={{ width: '100%', height: 'auto' }}
+        style={{ width: "100%", height: "auto" }}
       />
     </section>
   );
