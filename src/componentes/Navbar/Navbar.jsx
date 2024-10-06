@@ -4,7 +4,11 @@ export const Navbar = () => {
   return (
     <nav>
       <div>
-        <img src="" alt="logo tiendaasf" />
+        <h1>
+          <Link className="logo" to={"/"}>
+            NEW
+          </Link>
+        </h1>
       </div>
       <ul>
         <li>
@@ -20,7 +24,7 @@ export const Navbar = () => {
           <Link to="categorias">Categorias </Link>
         </li>
         <li>
-          <Link to="carrito">
+          <Link to="carrito" className="carrito">
             <i className="fa-solid fa-cart-shopping"></i>{" "}
           </Link>
         </li>
