@@ -1,8 +1,15 @@
 import { Link } from "react-router-dom";
 import "./navbar.css";
+import { useState } from "react";
+import { ContenedorCarrito } from "../Carrito/ContenedorCarrito";
 export const Navbar = () => {
+  const [carritoAbierto, setCarritoAbierto] = useState(true);
   return (
-    <nav>
+    <nav
+      style={{
+        position: "relative",
+      }}
+    >
       <div>
         <h1>
           <Link className="logo" to={"/"}>
@@ -24,11 +31,17 @@ export const Navbar = () => {
           <Link to="categorias">Categorias </Link>
         </li>
         <li>
-          <Link to="carrito" className="carrito">
+          <div
+            className="carrito"
+            onClick={() => {
+              setCarritoAbierto(!carritoAbierto);
+            }}
+          >
             <i className="fa-solid fa-cart-shopping"></i>{" "}
-          </Link>
+          </div>
         </li>
       </ul>
+      {carritoAbierto && <ContenedorCarrito />}
     </nav>
   );
 };

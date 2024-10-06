@@ -45,4 +45,5 @@ a:hover {
   font-size: 1.5rem;
   margin-left: 20px;
   line-height: 80px;
+  cursor: pointer;
 }
