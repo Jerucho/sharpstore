@@ -20,7 +20,9 @@ export const Navbar = () => {
           <Link to="categorias">Categorias </Link>
         </li>
         <li>
-          <Link to="carrito">Carrito </Link>
+          <Link to="carrito">
+            <i className="fa-solid fa-cart-shopping"></i>{" "}
+          </Link>
         </li>
       </ul>
     </nav>
