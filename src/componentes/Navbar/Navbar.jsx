@@ -3,7 +3,7 @@ import "./navbar.css";
 import { useState } from "react";
 import { ContenedorCarrito } from "../Carrito/ContenedorCarrito";
 export const Navbar = () => {
-  const [carritoAbierto, setCarritoAbierto] = useState(true);
+  const [carritoAbierto, setCarritoAbierto] = useState(false);
   return (
     <nav
       style={{
