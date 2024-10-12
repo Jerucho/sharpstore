@@ -14,7 +14,7 @@ const CompoPromo = () => {
   return (
     <div className="container">
       <section className="section">
-        <h2>Promos <span className="red-dot">•</span></h2>
+        <h2>Promosf <span className="red-dot">•</span></h2>
         <div className="grid">
           {images.slice(0, 2).map((image, index) => (
             <div key={index} className="card">
