@@ -5,20 +5,33 @@ export const ProductoCarrito = ({ producto }) => {
       style={{
         display: "flex",
         justifyContent: "space-between",
-        // gap: "10px",
         padding: "10px",
         borderBottom: "1px solid grey",
-        backgroundColor: "grey",
+        // backgroundColor: "grey",
       }}
     >
-      <img
-        src={producto.imagen}
-        alt={producto.nombre}
-        style={{ width: "100px", height: "100px" }}
-      />
-      <div>
-        <h3>{producto.nombre}</h3>
-        <p>{producto.precio}</p>
+      <div
+        style={{
+          color: "black",
+          display: "flex",
+          gap: "40px",
+          alignItems: "center",
+        }}
+      >
+        <img
+          src={producto.imagen}
+          alt={producto.nombre}
+          style={{
+            width: "100px",
+            height: "100px",
+            objectFit: "cover",
+          }}
+        />
+
+        <div>
+          <h3>{producto.nombre}</h3>
+          <p>S/{producto.precio}</p>
+        </div>
       </div>
       <div>
         <div
@@ -26,6 +39,7 @@ export const ProductoCarrito = ({ producto }) => {
             backgroundColor: "red",
             color: "white",
             padding: "2px 10px",
+            cursor: "pointer",
           }}
         >
           Eliminar

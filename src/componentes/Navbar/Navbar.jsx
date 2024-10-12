@@ -7,7 +7,7 @@ export const Navbar = () => {
   return (
     <nav
       style={{
-        position: "relative",
+        position: "fixed",
       }}
     >
       <div>

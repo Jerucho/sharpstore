@@ -194,14 +194,14 @@ export const Productos = () => {
   return (
     <>
       <Navbar />
-      {/* <Producto key={1} producto={productos.hombre[0]} /> */}
-      <h1>Hombres</h1>
-      <ProductosCategoria categoria={productos.hombre} />
-      <h1>Mujeres</h1>
-
-      <ProductosCategoria categoria={productos.mujer} />
-      <h1>Niños</h1>
-      <ProductosCategoria categoria={productos.ninos} />
+      <div style={{ padding: "80px 0 0 0" }}>
+        <h1>Hombres</h1>
+        <ProductosCategoria categoria={productos.hombre} />
+        <h1>Mujeres</h1>
+        <ProductosCategoria categoria={productos.mujer} />
+        <h1>Niños</h1>
+        <ProductosCategoria categoria={productos.ninos} />
+      </div>
     </>
   );
 };
