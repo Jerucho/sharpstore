@@ -25,10 +25,10 @@ export const Navbar = () => {
           <Link to="/productos">Productos </Link>
         </li>
         <li>
-          <Link to="promociones">Promociones </Link>
+          <Link to="/promociones">Promociones </Link>
         </li>
         <li>
-          <Link to="categorias">Categorias </Link>
+          <Link to="/categorias">Categorias </Link>
         </li>
         <li>
           <div
