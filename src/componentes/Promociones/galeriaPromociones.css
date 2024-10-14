@@ -28,26 +28,3 @@
     object-fit: cover;
   }
 }
-/* 
-.galeria-promociones div:nth-child(odd) {
-  height: auto;
-}
-
-.galeria-promociones div:nth-child(even) {
-  height: 300px;
-} */
-
-/* .galeria-promociones {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  gap: 1rem;
-  margin: 1rem;
-  border: 1px solid red;
-
-  div {
-    border: 1px solid blue;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
-} */

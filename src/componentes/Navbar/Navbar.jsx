@@ -28,9 +28,6 @@ export const Navbar = () => {
           <Link to="/promociones">Promociones </Link>
         </li>
         <li>
-          <Link to="/categorias">Categorias </Link>
-        </li>
-        <li>
           <div
             className="carrito"
             onClick={() => {

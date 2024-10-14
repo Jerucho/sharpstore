@@ -9,10 +9,14 @@ export const Producto = ({ producto }) => {
         src={producto.imagen}
         alt={producto.nombre}
       />
-      <h2 className="producto-h2">{producto.nombre}</h2>
-      <p className="producto-desc">{producto.descripcion}</p>
-      <p className="producto-precio">{producto.precio}</p>
-      <button className="producto-btn">Agregar al carrito</button>
+      <div className="producto-info">
+        <h2 className="producto-h2">{producto.nombre}</h2>
+        <p className="producto-precio">S/{producto.precio}</p>
+        <div className="producto-acciones">
+          <input type="number" name="" id="input-cantidad" />
+          <button className="producto-btn">Agregar al carrito</button>
+        </div>
+      </div>
     </div>
   );
 };
