@@ -1,10 +1,11 @@
 import "../Grupo/grupo.css";
 import { Producto } from "../Producto/Producto";
+import { Titulo } from "../Titulo/Titulo";
 export const Grupo = () => {
   return (
     <div className="contenedor">
       <section className="mas-vendido">
-        <h2>Lo más vendido</h2>
+        <Titulo texto="Más vendidos" />
         <div className="productosgeneral">
           <Producto
             producto={{

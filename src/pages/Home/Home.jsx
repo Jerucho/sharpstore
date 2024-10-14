@@ -7,11 +7,9 @@ export const Home = () => {
   return (
     <>
       <Navbar />
-      <div style={{ margin: "80px 0 0 0" }}>
-        <Banner />
-        <Grupo />
-        <GaleriaPromociones />
-      </div>
+      <Banner />
+      <Grupo />
+      <GaleriaPromociones />
     </>
   );
 };

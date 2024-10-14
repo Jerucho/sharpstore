@@ -1,5 +1,6 @@
 import { ProductosCategoria } from "../../componentes/CategoriaProductos/ProductosCategoria";
 import { Navbar } from "../../componentes/Navbar/Navbar";
+import { Titulo } from "../../componentes/Titulo/Titulo";
 
 export const Productos = () => {
   const productos = {
@@ -193,14 +194,21 @@ export const Productos = () => {
 
   return (
     <>
-      <Navbar />
-      <div style={{ padding: "80px 0 0 0" }}>
-        <h1>Hombres</h1>
-        <ProductosCategoria categoria={productos.hombre} />
-        <h1>Mujeres</h1>
-        <ProductosCategoria categoria={productos.mujer} />
-        <h1>Niños</h1>
-        <ProductosCategoria categoria={productos.ninos} />
+      <div
+        style={{
+          padding: "80px 100px",
+        }}
+      >
+        <Navbar />
+
+        <div>
+          <Titulo texto="Hombres" />
+          <ProductosCategoria categoria={productos.hombre} />
+          <Titulo texto="Mujeres" />
+          <ProductosCategoria categoria={productos.mujer} />
+          <Titulo texto="Niños" />
+          <ProductosCategoria categoria={productos.ninos} />
+        </div>
       </div>
     </>
   );

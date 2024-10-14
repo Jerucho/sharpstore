@@ -1,34 +1,25 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  body {
-    font-family: Arial, sans-serif;
-  }
-  
-  .contenedor {
-    width: 90%;
-    margin: 0 auto;
-  }
-  
-  .mas-vendido h2 {
-    font-size: 1.5rem;
-    margin-bottom: 10px;
-    text-align: center;
-  }
-  
-  .productosgeneral {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 10px;
-  }
-  
-  .productos {
-    background-color: #e0e0e0;
-    height: 100px;
-  }
-  
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-  
+body {
+  font-family: Arial, sans-serif;
+}
+
+.contenedor {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.productosgeneral {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+
+.productos {
+  background-color: #e0e0e0;
+  height: 100px;
+}

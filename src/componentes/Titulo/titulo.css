@@ -1,0 +1,15 @@
+h2 {
+  color: #333;
+  font-size: 40px;
+  margin-bottom: 1rem;
+  text-align: center;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  gap: 10px;
+}
+.linea {
+  height: 50px;
+  width: 10px;
+  background-color: #f1c40f;
+}
