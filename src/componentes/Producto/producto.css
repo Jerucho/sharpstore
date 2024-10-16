@@ -16,15 +16,6 @@
 .producto:hover {
   transform: translateY(-10px);
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-
-  #input-cantidad {
-    display: block;
-    width: 50px;
-    height: 70%;
-    text-align: center;
-    border: 1px solid #333;
-    border-radius: 5px;
-  }
 }
 
 .producto img {
@@ -38,16 +29,14 @@
 .producto-info {
   display: flex;
   flex-direction: column;
-
   justify-content: space-evenly;
-  text-align: center;
   height: 100%;
 }
 
 .producto .producto-h2 {
   font-size: 20px;
-  margin: 10px 0 10px;
   color: #333;
+  text-align: center;
 }
 
 .producto .producto-desc {
@@ -80,7 +69,7 @@
 }
 
 .producto .producto-btn:hover {
-  background: #333; /* Darker black color */
+  background: #333;
   transform: scale(1.05);
 }
 
@@ -92,5 +81,10 @@
 }
 
 #input-cantidad {
-  display: none;
+  display: block;
+  width: 50px;
+  height: 70%;
+  text-align: center;
+  border: 1px solid #333;
+  border-radius: 5px;
 }
