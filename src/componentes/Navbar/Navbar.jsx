@@ -24,9 +24,7 @@ export const Navbar = () => {
         <li>
           <Link to="/productos">Productos </Link>
         </li>
-        <li>
-          <Link to="/promociones">Promociones </Link>
-        </li>
+
         <li>
           <div
             className="carrito"
@@ -36,6 +34,11 @@ export const Navbar = () => {
           >
             <i className="fa-solid fa-cart-shopping"></i>{" "}
           </div>
+        </li>
+        <li>
+          <Link to="/promociones" id="ir_pagar">
+            Comprar
+          </Link>
         </li>
       </ul>
       {carritoAbierto && <ContenedorCarrito />}

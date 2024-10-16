@@ -52,3 +52,13 @@ a:hover {
   line-height: 80px;
   cursor: pointer;
 }
+
+#ir_pagar {
+  background-color: #f1c40f;
+  color: #333;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  text-decoration: none;
+  transition: 0.3s ease all;
+}
