@@ -36,7 +36,7 @@ export const Navbar = () => {
           </div>
         </li>
         <li>
-          <Link to="/promociones" id="ir_pagar">
+          <Link to="/pagar" id="ir_pagar">
             Comprar
           </Link>
         </li>
