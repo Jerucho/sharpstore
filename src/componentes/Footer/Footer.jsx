@@ -14,21 +14,21 @@ const Footer = () => {
                         <li>Hombre</li>
                         <li>Promos</li>
                         <li>Verano 2025</li>
-                        <li>80%</li>
+                        <li>80% OFF</li>
                     </ul>
                 </div>
                 <div className="footer-section">
                     <h4>ASISTENCIA</h4>
                     <ul>
                         <li>Pago</li>
-                        <li>Envio</li>
+                        <li>Envío</li>
                         <li>Mapa de Sitio</li>
                     </ul>
                 </div>
                 <div className="footer-section">
                     <h4>INFORMACIÓN DE LA EMPRESA</h4>
                     <ul>
-                        <li>Acerca de new</li>
+                        <li>Acerca de New</li>
                         <li>Trabaja en Nuestro Equipo</li>
                     </ul>
                 </div>
