@@ -1,6 +1,7 @@
 import { ProductosCategoria } from "../../componentes/CategoriaProductos/ProductosCategoria";
 import { Navbar } from "../../componentes/Navbar/Navbar";
 import { Titulo } from "../../componentes/Titulo/Titulo";
+import Footer from "../../componentes/Footer/Footer";
 
 export const Productos = () => {
   const productos = {
@@ -210,6 +211,7 @@ export const Productos = () => {
           <ProductosCategoria categoria={productos.ninos} />
         </div>
       </div>
+      <Footer />
     </>
   );
 };
