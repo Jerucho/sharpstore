@@ -1,6 +1,7 @@
 import { Navbar } from "../../componentes/Navbar/Navbar";
 import CompoPromo from "../../componentes/PromoComp/CompoPromo";
 import { TarjetaProductoReversible } from "../../componentes/TarjetaProductoReversible/TarjetaProductoReversible";
+import GuiPago from "../../componentes/Pagar/guiPago";
 
 export const Promociones = () => {
   return (
@@ -23,6 +24,7 @@ export const Promociones = () => {
           }}
         />
       </div>
+      <GuiPago />
     </>
   );
 };
