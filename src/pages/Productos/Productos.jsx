@@ -196,7 +196,7 @@ export const Productos = () => {
     <>
       <div
         style={{
-          padding: "80px 100px",
+          padding: "80px 0",
         }}
       >
         <Navbar />

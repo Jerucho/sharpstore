@@ -1,19 +1,14 @@
+/* eslint-disable react/prop-types */
 import "../Grupo/grupo.css";
 import { Producto } from "../Producto/Producto";
-import { Titulo } from "../Titulo/Titulo";
-export const Grupo = () => {
+export const Grupo = ({ productos }) => {
   return (
     <div className="contenedor">
       <section className="mas-vendido">
-        <Titulo texto="Más vendidos" />
         <div className="productosgeneral">
-          <Producto
-            producto={{
-              nombre: "Producto 1",
-              precio: 100,
-              imagen: "https://via.placeholder.com/150",
-            }}
-          />
+          {productos.map((producto) => (
+            <Producto key={producto.id} producto={producto} />
+          ))}
         </div>
       </section>
     </div>

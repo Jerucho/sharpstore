@@ -1,4 +1,4 @@
-h2 {
+.h2-titulo {
   color: #333;
   font-size: 40px;
   margin-bottom: 1rem;
@@ -7,6 +7,7 @@ h2 {
   justify-content: left;
   align-items: center;
   gap: 10px;
+  margin-left: 100px;
 }
 .linea {
   height: 50px;
