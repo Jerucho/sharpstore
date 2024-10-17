@@ -1,5 +1,6 @@
 import { Navbar } from "../../componentes/Navbar/Navbar";
 import GuiPago from "../../componentes/Pagar/GuiPago";
+import Footer from "../../componentes/Footer/Footer";
 
 export const Pagar = () => {
   return (
@@ -15,6 +16,7 @@ export const Pagar = () => {
       >
         <GuiPago />
       </div>
+      <Footer />
     </>
   );
 };

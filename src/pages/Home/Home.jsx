@@ -3,6 +3,7 @@ import { Banner } from "../../componentes/Banner/Banner";
 import { Grupo } from "../../componentes/Grupo/Grupo";
 import { GaleriaPromociones } from "../../componentes/Promociones/GaleriaPromociones";
 import { Titulo } from "../../componentes/Titulo/Titulo";
+import Footer from "../../componentes/Footer/Footer";
 
 export const Home = () => {
   const productosVendidos = [
@@ -90,6 +91,7 @@ export const Home = () => {
       <Titulo texto="Promociones" />
       <Grupo productos={productosPromocion} />
       <GaleriaPromociones />
+      <Footer />
     </>
   );
 };
