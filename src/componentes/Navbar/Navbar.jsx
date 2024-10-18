@@ -17,7 +17,7 @@ export const Navbar = () => {
           </Link>
         </h1>
       </div>
-      <ul>
+      <ul className="navbar-ul">
         <li>
           <Link to="/">Inicio </Link>
         </li>
