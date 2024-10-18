@@ -87,7 +87,6 @@ export const Home = () => {
       <Banner />
       <Titulo texto="Más vendidos" />
       <Grupo productos={productosVendidos} />
-
       <Titulo texto="Promociones" />
       <Grupo productos={productosPromocion} />
       <GaleriaPromociones />

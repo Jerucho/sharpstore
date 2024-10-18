@@ -8,9 +8,11 @@ nav {
   height: 80px;
   position: fixed;
   width: 100%;
+  max-width: 100%;
   z-index: 1000;
   top: 0;
   left: 0;
+  transition: 0.3s ease all;
 }
 
 .logo {
@@ -61,4 +63,68 @@ a:hover {
   font-size: 1.2rem;
   text-decoration: none;
   transition: 0.3s ease all;
+}
+
+.boton-menu {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  nav {
+    max-width: 100%;
+    width: 100%;
+  }
+
+  .boton-menu {
+    display: block;
+    font-size: 2rem;
+    cursor: pointer;
+    background-color: transparent;
+    outline: none;
+    border: none;
+    padding: 5px 10px;
+  }
+
+  .menu-icono {
+    font-size: 2rem;
+    color: #fff;
+  }
+
+  .navbar-ul {
+    display: none;
+  }
+
+  .menu-abierto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 80px;
+    left: 0;
+    width: 100%;
+    background-color: #333;
+    z-index: 1000;
+    gap: 0;
+    transition: 0.3s ease all;
+  }
+
+  .logo {
+    margin-bottom: 10px;
+  }
+
+  a {
+    font-size: 1.5rem;
+    line-height: 1.5;
+  }
+
+  .carrito i {
+    font-size: 2rem;
+    margin-left: 0;
+  }
+
+  #ir_pagar {
+    padding: 8px 16px;
+    font-size: 1.5rem;
+  }
 }

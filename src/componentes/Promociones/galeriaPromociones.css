@@ -28,3 +28,18 @@
     object-fit: cover;
   }
 }
+
+@media (max-width: 768px) {
+  .galeria-promociones {
+    margin: 50px 0;
+  }
+  .galeria-promociones div {
+    width: 100%;
+    height: 100px;
+  }
+
+  .galeria-promociones div:hover {
+    width: 100%;
+    height: 350px;
+  }
+}

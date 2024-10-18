@@ -4,6 +4,18 @@ import { useState } from "react";
 import { ContenedorCarrito } from "../Carrito/ContenedorCarrito";
 export const Navbar = () => {
   const [carritoAbierto, setCarritoAbierto] = useState(false);
+  const [menuAbierto, setMenuAbierto] = useState(false);
+  const abrirMenu = () => {
+    const menu = document.getElementById("menu");
+    menu.classList.toggle("menu-abierto");
+    if (menuAbierto) {
+      setCarritoAbierto(false);
+      setMenuAbierto(!menuAbierto);
+    } else {
+      setCarritoAbierto(false);
+      setMenuAbierto(!menuAbierto);
+    }
+  };
   return (
     <nav
       style={{
@@ -17,7 +29,7 @@ export const Navbar = () => {
           </Link>
         </h1>
       </div>
-      <ul className="navbar-ul">
+      <ul id="menu" className="navbar-ul">
         <li>
           <Link to="/">Inicio </Link>
         </li>
@@ -41,6 +53,10 @@ export const Navbar = () => {
           </Link>
         </li>
       </ul>
+
+      <button className="boton-menu" onClick={abrirMenu}>
+        <i className="fa-solid fa-bars menu-icono"></i>
+      </button>
       {carritoAbierto && <ContenedorCarrito />}
     </nav>
   );

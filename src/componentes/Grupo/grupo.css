@@ -22,3 +22,11 @@ body {
   background-color: #e0e0e0;
   height: 100px;
 }
+
+@media (max-width: 768px) {
+  .contenedor {
+    width: 100%;
+    overflow-x: scroll;
+    padding: 0 5px;
+  }
+}

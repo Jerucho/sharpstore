@@ -1,0 +1,25 @@
+.contenedor-carrito {
+  position: fixed;
+  top: 80px;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  width: 500px;
+  height: 400px;
+  overflow-y: scroll;
+  scrollbar-width: thin;
+  scrollbar-color: white;
+  gap: 1px;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
+  z-index: 1000;
+  transition: 0.3s ease all;
+}
+
+@media (max-width: 768px) {
+  .contenedor-carrito {
+    width: 100%;
+    top: 53%;
+    right: 0;
+  }
+}

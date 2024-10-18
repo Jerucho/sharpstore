@@ -1,0 +1,17 @@
+.banner {
+  padding: 30px 100px;
+}
+
+.banner img {
+  width: 100%;
+  height: 55vh;
+}
+
+@media (max-width: 768px) {
+  .banner {
+    padding: 00px 00px;
+  }
+  .banner img {
+    height: 25vh;
+  }
+}

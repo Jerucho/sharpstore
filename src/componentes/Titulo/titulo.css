@@ -14,3 +14,16 @@
   width: 10px;
   background-color: #f1c40f;
 }
+
+@media (max-width: 768px) {
+  .h2-titulo {
+    font-size: 30px;
+    margin-top: 40px;
+    margin-left: 20px;
+    /* justify-content: center; */
+    text-align: center;
+  }
+  .linea {
+    /* display: none; */
+  }
+}

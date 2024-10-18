@@ -1,5 +1,5 @@
 import { ProductoCarrito } from "./ProductoCarrito";
-
+import "./contenedorCarrito.css";
 export const ContenedorCarrito = () => {
   const productos = [
     {
@@ -52,24 +52,7 @@ export const ContenedorCarrito = () => {
   ];
   return (
     <>
-      <div
-        style={{
-          position: "fixed",
-          top: "80px",
-          right: "0",
-          display: "flex",
-          flexDirection: "column",
-          backgroundColor: "white",
-          width: "500px",
-          height: "400px",
-          overflowY: "scroll",
-          scrollbarWidth: "thin",
-          scrollbarColor: "white",
-          gap: "1px",
-          boxShadow: "0px 0px 10px 0px rgba(0,0,0,0.75)",
-          zIndex: "1000",
-        }}
-      >
+      <div className="contenedor-carrito">
         {productos.map((producto, index) => (
           <ProductoCarrito key={index} producto={producto} />
         ))}

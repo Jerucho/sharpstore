@@ -69,3 +69,26 @@
   margin-top: 10px;
   width: 10%;
 }
+
+@media (max-width: 768px) {
+  .footer {
+    flex-direction: column;
+    padding: 25px;
+  }
+
+  .footer-section {
+    margin: 10px 0;
+  }
+
+  .footer-section ul {
+    flex-direction: row;
+  }
+
+  .footer-section ul li {
+    margin: 0 10px;
+  }
+
+  .redes {
+    flex-direction: row;
+  }
+}

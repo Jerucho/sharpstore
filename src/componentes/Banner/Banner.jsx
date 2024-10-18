@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-
+import "./banner.css";
 export const Banner = () => {
   const images = [
     "https://bassika.pe/cdn/shop/files/banner_horizontal_77797195-5b57-4607-a52d-3488831fc2a7.jpg?v=1716308998&width=1024",
@@ -18,15 +18,11 @@ export const Banner = () => {
   }, [images.length]);
 
   return (
-    <section
-      style={{
-        padding: "30px 100px",
-      }}
-    >
+    <section className="banner">
       <img
         src={images[currentImageIndex]}
         alt="Banner"
-        style={{ width: "100%", height: "55vh" }}
+        className="banner-img"
       />
     </section>
   );
