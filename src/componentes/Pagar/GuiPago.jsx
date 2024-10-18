@@ -2,11 +2,18 @@ import "../Pagar/pago.css";
 import logoYape from "../../assets/yape.png";
 import logoMercadoPago from "../../assets/mp.png";
 import logoPlin from "../../assets/plin.png";
+import { useNavigate } from "react-router-dom";
 const GuiPago = () => {
+  const navigate = useNavigate();
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    alert("Compra realizada con éxito");
+    navigate("/");
+  };
   return (
     <>
       <div className="ventana-pago">
-        <form className="formulario">
+        <form className="formulario" onSubmit={handleSubmit}>
           <div className="opciones-pago">
             <button name="yape" type="button">
               <img src={logoYape} alt="logo-yape" />
@@ -48,9 +55,10 @@ const GuiPago = () => {
               <input
                 id="numero-tarjeta"
                 className="entrada-tarjeta"
-                type="number"
+                type="text"
                 name="input-name"
                 title="Inpit title"
+                maxLength={16}
                 placeholder="0000 0000 0000 0000"
               />
             </div>
@@ -66,14 +74,16 @@ const GuiPago = () => {
                   name="vencimiento"
                   title="Fecha de vencimiento"
                   placeholder="01/23"
+                  maxLength={5}
                 />
                 <input
                   id="codigo-seguridad"
                   className="entrada-tarjeta"
-                  type="number"
+                  type="text"
                   name="cvv"
                   title="CVV"
                   placeholder="CVV"
+                  maxLength={3}
                 />
               </div>
             </div>
